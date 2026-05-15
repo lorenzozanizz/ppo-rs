@@ -1,7 +1,11 @@
 [package]
-name = "ppo-rs"
+name = "ppo-37-rs"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+plotters = "0.3.7"
+tch = "0.24.0"
+rand = "0.10.1"
 num = "0.4.3"
+ndarray = "0.17.2"
