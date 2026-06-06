@@ -1,4 +1,3 @@
-mod agent;
 
 use std::fmt::Debug;
 use std::collections::HashMap;
@@ -96,6 +95,7 @@ pub struct PpoConfig {
 }
 
 impl Default for PpoConfig {
+    
     fn default() -> Self {
 
         Self {

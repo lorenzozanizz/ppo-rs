@@ -156,7 +156,7 @@ fn layer_init(
     // Orthogonal initialization for weights
     let shape = layer.ws.size();
     let mut vs_init = tch::nn::VarStore::new(tch::Device::Cpu);
-    let weights = tch::nn::init::orthogonal_(&vs_init.root(), &[shape[0], shape[1]], std);
+    let weights = tch::nn::init::ortho(&vs_init.root(), &[shape[0], shape[1]], std);
     let _ = tch::no_grad(|| {
         layer.ws.copy(&weights);
     });
